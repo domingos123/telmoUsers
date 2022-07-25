@@ -24,10 +24,10 @@ class UpdateUtilizadorUseCase {
         admin,
         email }: IUtilizadorDTO): Promise<void> {
 
-        const UtilizadorEmail = await this.utilizadorRepository.findByEmail(email!);
+        const UtilizadorEmail = await this.utilizadorRepository.findById(id!);
 
         if (!UtilizadorEmail) {
-            throw new Error("admin with this email doesn´t exist");
+            throw new Error("admin doesn´t exist");
         }
 
         await this.utilizadorRepository.update({
