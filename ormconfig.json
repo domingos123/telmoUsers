@@ -5,6 +5,12 @@
     "username": "merhnknscvfyru",
     "password": "856255943bd8e14904a04ec1ac432eae915044993cca897ab2abc6c115d39c1d",
     "database": "daeeq0anqiho1e",
+    "extra": {
+        "ssl": {
+            "require": true,
+            "rejectUnauthorized": false
+        }
+    },
     "entities": [
         "./src/modules/**/model/*.ts"
     ],
