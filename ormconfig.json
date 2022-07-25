@@ -1,0 +1,17 @@
+{
+    "type": "postgres",
+    "host": "ec2-63-32-248-14.eu-west-1.compute.amazonaws.com",
+    "port": 5432,
+    "username": "merhnknscvfyru",
+    "password": "856255943bd8e14904a04ec1ac432eae915044993cca897ab2abc6c115d39c1d",
+    "database": "daeeq0anqiho1e",
+    "entities": [
+        "./src/modules/**/model/*.ts"
+    ],
+    "migrations": [
+        "./src/shared/infra/typeorm/migrations/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "./src/shared/infra/typeorm/migrations"
+    }
+}
